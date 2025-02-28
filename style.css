@@ -190,7 +190,7 @@ input {
 
 
 .attribution {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: calc(100% + 5rem);
     left: 50%;
@@ -203,16 +203,16 @@ input {
 
     line-height: 1.6em;
     letter-spacing: .1em;
-    color: var(--clr-very-dark-cyan);
-    background-color: var(--clr-grayish-cyan);
+    color: var(--clr-neutral-light-grey);
+    background-color: transparent;
 
     a {
 
-        color: var(--clr-white);
+        color: var(--clr-primary-green);
         text-decoration: none;
 
         &:hover {
-            color: var(--clr-highlight-cyan);
+            color: var(--clr-primary-orange);
             text-decoration: underline;
         }
     }
@@ -279,6 +279,10 @@ input {
     &>*:not(:first-child) {
         background-color: var(--clr-neutral-dark-grey);
         padding: var(--block-padding) var(--inline-padding) ;
+    }
+
+    .attribution {
+        background-color: transparent;
     }
 
     .floating-title {
